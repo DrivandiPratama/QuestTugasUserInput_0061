@@ -9,8 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.material3.Text
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.w3c.dom.Text
 
 @Composable
 fun TugasACT4Tugas(modifier: Modifier = Modifier){
@@ -23,6 +24,12 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = colorResource(R.color.ungu_form)
+        )
+
+        Text(
+            text = stringResource(R.string.petunjuk_form),
+            fontSize = 12.sp,
+            color = colorResource(R.color.abu_form)
         )
     }
 }
