@@ -105,6 +105,17 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                 singleLine = true,
                 shape = RoundedCornerShape(14.dp)
             )
+
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                label = {
+                    Text(stringResource(R.string.experience))
+                },
+                modifier = Modifier.weight(1f),
+                singleLine = true,
+                shape = RoundedCornerShape(14.dp)
+            )
         }
     }
 }
