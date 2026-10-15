@@ -118,5 +118,13 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             )
         }
         Spacer(modifier = Modifier.height(12.dp))
+
+        Text(
+            text = stringResource(R.string.pilih_skill),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp),
+            fontSize = 14.sp
+        )
     }
 }
