@@ -95,7 +95,16 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                 .padding(horizontal = 20.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                label = {
+                    Text(stringResource(R.string.tgl_lahir))
+                },
+                modifier = Modifier.weight(1f),
+                singleLine = true,
+                shape = RoundedCornerShape(14.dp)
+            )
         }
     }
 }
