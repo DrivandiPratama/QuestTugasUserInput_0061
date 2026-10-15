@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.material3.Text
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlin.math.sin
 
 @Composable
 fun TugasACT4Tugas(modifier: Modifier = Modifier){
@@ -52,6 +53,17 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                 onValueChange = {},
                 label = {
                     Text(stringResource(R.string.nama_depan))
+                },
+                modifier = Modifier.weight(1f),
+                singleLine = true,
+                shape = RoundedCornerShape(14.dp)
+            )
+
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                label = {
+                    Text(stringResource(R.string.nama_belakang))
                 },
                 modifier = Modifier.weight(1f),
                 singleLine = true,
