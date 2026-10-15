@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
@@ -46,7 +47,16 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                 .padding(horizontal = 20.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                label = {
+                    Text(stringResource(R.string.nama_depan))
+                },
+                modifier = Modifier.weight(1f),
+                singleLine = true,
+                shape = RoundedCornerShape(14.dp)
+            )
         }
     }
 }
