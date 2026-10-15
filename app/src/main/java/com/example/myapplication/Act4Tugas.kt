@@ -73,6 +73,17 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
         }
         Spacer(modifier = Modifier.height(8.dp))
 
-
+        OutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = {
+                Text(stringResource(R.string.email))
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp),
+            singleLine = true,
+            shape = RoundedCornerShape(14.dp)
+        )
     }
 }
