@@ -117,5 +117,6 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                 shape = RoundedCornerShape(14.dp)
             )
         }
+        Spacer(modifier = Modifier.height(12.dp))
     }
 }
