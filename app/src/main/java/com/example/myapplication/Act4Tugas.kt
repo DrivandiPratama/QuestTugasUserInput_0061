@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.material3.*
@@ -20,6 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.material3.Text
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -163,6 +163,22 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                     Text(stringResource(R.string.skill_web))
                 }
             Spacer(modifier = Modifier.padding(18.dp))
+
+            Button(
+                onClick = {},
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp),
+                shape = RoundedCornerShape(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorResource(R.color.ungu_form)
+                )
+            ) {
+                Text(
+                    text = stringResource(R.string.proceed),
+                    color = colorResource(R.color.putih_form)
+                )
+            }
         }
     }
 }
