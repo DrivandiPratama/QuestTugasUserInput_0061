@@ -111,8 +111,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             OutlinedTextField(
-                value = "",
-                onValueChange = {},
+                value = tanggalLahir,
+                onValueChange = { tanggalLahir = it },
                 label = {
                     Text(stringResource(R.string.tgl_lahir))
                 },
@@ -122,8 +122,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             )
 
             OutlinedTextField(
-                value = "",
-                onValueChange = {},
+                value = experience,
+                onValueChange = { experience = it },
                 label = {
                     Text(stringResource(R.string.experience))
                 },
