@@ -222,6 +222,35 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                                 color = colorResource(R.color.putih_form),
                                 fontWeight = FontWeight.Bold
                             )
+                            Text(
+                                text = "$namaDepan $namaBelakang",
+                                color = colorResource(R.color.putih_form)
+                            )
+
+                            Text(
+                                text = email,
+                                color = colorResource(R.color.putih_form)
+                            )
+
+                            Text(
+                                text = "${stringResource(R.string.tgl_lahir)}: $tanggalLahir",
+                                color = colorResource(R.color.putih_form)
+                            )
+
+                            Text(
+                                text = "${stringResource(R.string.experience)}: $experience",
+                                color = colorResource(R.color.putih_form)
+                            )
+
+                            Text(
+                                text = "Skill: " +
+                                        listOfNotNull(
+                                            if (androidDipilih) stringResource(R.string.skill_android) else null,
+                                            if (uiuxDipilih) stringResource(R.string.skill_uiux) else null,
+                                            if (webDipilih) stringResource(R.string.skill_web) else null
+                                        ).joinToString(", "),
+                                color = colorResource(R.color.putih_form)
+                            )
                         }
                     }
                 }
