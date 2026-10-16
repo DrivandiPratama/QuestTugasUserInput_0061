@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name="padding_kecil">8dp</dimen>
+    <dimen name="padding_sedang">20dp</dimen>
+    <dimen name="jarak_form">12dp</dimen>
+    <dimen name="ukuran_judul">24sp</dimen>
+</resources>
