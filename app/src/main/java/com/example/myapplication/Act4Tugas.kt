@@ -39,6 +39,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
     var androidDipilih by remember { mutableStateOf(false) }
     var uiuxDipilih by remember { mutableStateOf(false) }
     var webDipilih by remember { mutableStateOf(false) }
+    var tampilkanHasil by remember { mutableStateOf(false) }
+
 
     Column(
         modifier = modifier.fillMaxSize(),
