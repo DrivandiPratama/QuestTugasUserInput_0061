@@ -19,10 +19,10 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
+import androidx.compose.material3.Checkbox
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kotlin.math.sin
+
 
 @Composable
 fun TugasACT4Tugas(modifier: Modifier = Modifier){
@@ -162,6 +162,7 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                     )
                     Text(stringResource(R.string.skill_web))
                 }
+            Spacer(modifier = Modifier.padding(18.dp))
         }
     }
 }
