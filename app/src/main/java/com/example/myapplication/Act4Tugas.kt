@@ -135,6 +135,16 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Checkbox(
+                        checked = false,
+                        onCheckedChange = {}
+                    )
+                    Text(stringResource(R.string.skill_android))
+                }
+
 
         }
     }
