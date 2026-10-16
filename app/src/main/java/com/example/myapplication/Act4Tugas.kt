@@ -77,8 +77,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             )
 
             OutlinedTextField(
-                value = "",
-                onValueChange = {},
+                value = namaBelakang,
+                onValueChange = { namaBelakang = it },
                 label = {
                     Text(stringResource(R.string.nama_belakang))
                 },
@@ -90,8 +90,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
         Spacer(modifier = Modifier.height(8.dp))
 
         OutlinedTextField(
-            value = "",
-            onValueChange = {},
+            value = email,
+            onValueChange = { email = it },
             label = {
                 Text(stringResource(R.string.email))
             },
