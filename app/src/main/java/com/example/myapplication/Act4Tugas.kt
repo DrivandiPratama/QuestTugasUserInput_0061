@@ -66,8 +66,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             OutlinedTextField(
-                value = "",
-                onValueChange = {},
+                value = namaDepan,
+                onValueChange = { namaDepan = it },
                 label = {
                     Text(stringResource(R.string.nama_depan))
                 },
