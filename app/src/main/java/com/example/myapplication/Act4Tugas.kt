@@ -181,7 +181,9 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
             Spacer(modifier = Modifier.padding(18.dp))
 
             Button(
-                onClick = {},
+                onClick = {
+                    tampilkanHasil = true
+                },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 20.dp),
