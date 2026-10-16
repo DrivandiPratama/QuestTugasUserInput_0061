@@ -20,12 +20,26 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.material3.Text
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
 @Composable
 fun TugasACT4Tugas(modifier: Modifier = Modifier){
+    var namaDepan by remember { mutableStateOf("") }
+    var namaBelakang by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    var tanggalLahir by remember { mutableStateOf("") }
+    var experience by remember { mutableStateOf("") }
+
+    var androidDipilih by remember { mutableStateOf(false) }
+    var uiuxDipilih by remember { mutableStateOf(false) }
+    var webDipilih by remember { mutableStateOf(false) }
+
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
