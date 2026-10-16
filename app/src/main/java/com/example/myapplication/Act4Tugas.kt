@@ -153,8 +153,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Checkbox(
-                        checked = false,
-                        onCheckedChange = {}
+                        checked = androidDipilih,
+                        onCheckedChange = { androidDipilih = it }
                     )
                     Text(stringResource(R.string.skill_android))
                 }
@@ -162,8 +162,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Checkbox(
-                        checked = false,
-                        onCheckedChange = {}
+                        checked = uiuxDipilih,
+                        onCheckedChange = { uiuxDipilih = it }
                     )
                     Text(stringResource(R.string.skill_uiux))
                 }
@@ -171,8 +171,8 @@ fun TugasACT4Tugas(modifier: Modifier = Modifier){
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Checkbox(
-                        checked = false,
-                        onCheckedChange = {}
+                        checked = webDipilih,
+                        onCheckedChange = { webDipilih = it }
                     )
                     Text(stringResource(R.string.skill_web))
                 }
